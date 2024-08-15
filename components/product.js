@@ -141,6 +141,7 @@ template.innerHTML = `
             font-weight: 500;
             background: var(--background-secondary);
             cursor: pointer;
+            color: var(--text);
         }
 
         button img {
