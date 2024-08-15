@@ -1,0 +1,462 @@
+:root {
+    --text: #231F20;
+    --primary: #CF8C0B;
+    --background: #F9EFE0;
+    --background-secondary: rgba(207, 140, 11, 0.1);
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    color: var(--text);
+}
+
+main {
+    background: #FFFCF8;
+}
+
+/*HEADER*/
+header {
+    position: relative;
+    background: linear-gradient(107.15deg, var(--background) 0%, #DED3C1 100%);
+    overflow: hidden;
+}
+
+nav {
+    z-index: 10;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 2rem;
+    font-family: "Lusitana", serif;
+}
+
+nav, nav ul, .navigation {
+    display: flex;
+}
+
+nav ul {
+    gap: 3rem;
+    margin: 1.5rem 6rem;
+}
+
+nav li {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.035em;
+}
+
+
+.teapot img {
+    width: 128px;
+    height: 128px;
+}
+
+.cart {
+    height: 20px;
+    width: 20px;
+    padding: .5rem;
+    background: #FFFFFF;
+    border: 2px dashed #FFFFFF;
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.cart::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border: 2px dashed #fff;
+    cursor: pointer;
+}
+
+.cart--items {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: -0.035em;
+    color: #fff;
+    border-radius: 50%;
+    background: var(--text);
+}
+
+
+/*BANNER*/
+.banner {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7.5rem 0 17.5rem 0;
+    width: 700px;
+    margin: 0 auto;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.banner--title {
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+    letter-spacing: -0.035em;
+    color: var(--text);
+}
+
+.banner--title span:last-child {
+    font-weight: 700;
+}
+
+.banner--subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.banner--button img, .banner--button span {
+    margin: .375rem;
+}
+
+.banner--button span {
+    text-shadow: 2px 2px 0 var(--background);
+}
+
+.banner--button {
+    background: var(--text);
+    padding: 1rem 2rem;
+    background: var(--background-secondary);
+    border: 1px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -.375rem;
+    cursor: pointer;
+}
+
+.banner--image {
+    position: absolute;
+    width: 500px;
+}
+
+.banner--image:nth-of-type(1) {
+    width: 450px;
+    left: 0;
+    top: 0;
+}
+
+.banner--image:nth-of-type(2) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner--image:nth-of-type(3) {
+    top: 4%;
+    right: -1rem;
+}
+
+.banner--image:nth-of-type(4) {
+    right: 0;
+    bottom: 0;
+}
+
+.banner--image:nth-of-type(5) {
+    left: 0;
+    bottom: 0;
+    width: 450px;
+}
+
+.banner-label {
+    text-wrap: nowrap;
+    z-index: 10;
+    padding: 16px;
+    position: absolute;
+    height: fit-content;
+    bottom: 30px;
+    left:100%;
+    top: 190px;
+    background: var(--background-secondary);
+    transform: translateX(-65%) rotate(-90deg);
+    font-family: "Lusitana", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: var(--primary);
+}
+
+.banner-label:after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border: 2px dashed var(--background-secondary);
+}
+
+/*DESCRIPTION*/
+.description {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 7.5rem 0;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.description--title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 96px;
+    line-height: 96px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    color: var(--text);
+    margin: 0;
+    position: relative;
+}
+
+.description--title:after {
+    top: 2.75rem;
+    bottom: 1.15rem;
+    left: 0;
+    right: 0;
+    content: "";
+    background: var(--background);
+    position: absolute;
+    z-index: -1;
+}
+
+.description h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin: -1.5rem 0;
+}
+
+.description h3 span {
+    display: block;
+    margin: 1.5rem 0;
+}
+
+.description--sm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 275px;
+    position: relative;
+}
+
+.divider {
+    width: 80px;
+    height: 1px;
+    content: "";
+    top: 50%;
+    left: 50%;
+    background: var(--primary);
+}
+
+.description--sm a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+/*PRODUCTS*/
+.products {
+    display: flex;
+    gap: 32px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 4rem 0;
+    margin: 0 2rem;
+}
+
+
+/* Ultra Wide devices (xxl) */
+@media (max-width: 1600px) {
+    .banner--image:nth-of-type(2) {
+        left: 55%;
+    }
+}
+/* Extra Large devices (xl) */
+@media (max-width: 1400px) {
+    .banner--image:nth-of-type(2) {
+        display: none;
+    }
+}
+/* Large devices (lg) */
+@media (max-width: 1200px) {
+    .banner--image {
+        width: 400px;
+    }
+    .banner--image:nth-of-type(1), .banner--image:nth-of-type(5) {
+        width: 350px;
+    }
+}
+/* Medium devices (md) */
+@media (max-width: 992px) {
+    .banner--image {
+        width: 300px;
+    }
+    .banner--image:nth-of-type(1), .banner--image:nth-of-type(5) {
+        width: 250px;
+    }
+    .banner {
+        padding: 5rem 2rem 10rem;
+        width: 600px;
+    }
+    .banner--title, .description--title {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    .banner--subtitle, .description h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .banner-label {
+        top: 160px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .description {
+        padding: 5rem 2rem;
+        width: 600px;
+    }
+}
+/* Small devices (sm) */
+@media (max-width: 768px) {
+    .banner--image {
+        width: 200px;
+    }
+    .banner--image:nth-of-type(5) {
+        width: 175px;
+    }
+    .banner--image:nth-of-type(1) {
+        display: none;
+    }
+    .banner--image:nth-of-type(3) {
+        display: none;
+    }
+    .teapot {
+        display: none;
+    }
+    nav ul {
+        margin: 1.5rem 0;
+        gap: 1rem;
+    }
+
+    .banner {
+        padding: 4rem 2rem 8rem;
+        width: 100%;
+    }
+    .banner--title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .banner--subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .banner--button {
+        padding: 0.75rem 1.5rem;
+    }
+    .banner-label {
+        top: 120px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+
+    .banner {
+        padding: 4rem 2rem 8rem;
+        width: 100%;
+    }
+    .banner--title, .description--title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .banner--subtitle, .description > h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .banner--button {
+        padding: 0.75rem 1.5rem;
+    }
+    .banner-label {
+        top: 120px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .description {
+        padding: 4rem 2rem;
+        width: 100%;
+    }
+}
+/* Extra Small devices (xs) */
+@media (max-width: 576px) {
+    nav {
+        margin: 0 1rem;
+    }
+    nav li {
+        font-size: 1rem;
+    }
+    .banner {
+        padding: 3rem 1rem 6rem;
+    }
+    .banner--title, .description--title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .banner--subtitle, .description > h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .banner--button {
+        padding: 0.5rem 1rem;
+    }
+    .banner-label {
+        top: 100px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .banner--image {
+        width: 150px;
+    }
+    .banner--image:nth-of-type(5) {
+        width: 125px;
+    }
+
+    .description {
+        padding: 3rem 1rem;
+    }
+    .products {
+        padding-top: 1rem;
+        margin: 0 1rem;
+    }
+}
+
+
+
+
+
+
+
+

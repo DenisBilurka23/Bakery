@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Pain au Cranberry",
+    "description": "A delightful spiral pastry filled with light French vanilla cream and studded with seasonal berries",
+    "price": 128,
+    "image": "assets/images/product-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Roasted Pear Danish",
+    "description": "A Danish pastry featuring a roasted pear center, complemented by light French vanilla cream and seasonal berries.",
+    "price": 23,
+    "image": "assets/images/product-2.png"
+  },
+  {
+    "id": 3,
+    "name": "Almond Croissant",
+    "description": "A buttery croissant topped with toasted almonds and a hint of almond cream.",
+    "price": 95,
+    "image": "assets/images/product-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Chocolate Eclair",
+    "description": "A classic eclair filled with rich chocolate cream and topped with a glossy chocolate glaze.",
+    "price": 105,
+    "image": "assets/images/product-2.png"
+  },
+  {
+    "id": 5,
+    "name": "Lemon Tart",
+    "description": "A tangy lemon tart with a buttery crust and a sweet lemon filling, topped with powdered sugar.",
+    "price": 85,
+    "image": "assets/images/product-1.png"
+  },
+  {
+    "id": 6,
+    "name": "Cinnamon Roll",
+    "description": "A soft and gooey cinnamon roll, freshly baked to perfection, swirled with rich cinnamon and sugar, and topped with a luscious",
+    "price": 75,
+    "image": "assets/images/product-2.png"
+  }
+]
